@@ -1,0 +1,249 @@
+body {
+	font-family: "Microsoft YaHei", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #2f2e2e;
+}
+
+.container {
+	max-width: 1000px;
+}
+
+.navbar-default {
+	min-height: 60px;
+	margin-bottom: 0;
+	padding-top: 3px;
+}
+
+.navbar-default
+.navbar-brand {
+	font-weight: bold;
+	font-size: 18px;
+	color: #2f2e2e;
+	letter-spacing: 5px;
+}
+
+.navbar-default
+.navbar-brand img {
+	height: 28px;
+	margin-top: -4px;
+	display: inline;
+}
+.navbar-collapse {
+	overflow: hidden;
+}
+
+footer {
+	background-color: #2f2e2e;
+	color: #999;
+	padding: 30px 0;
+	line-height: 1.6;
+}
+
+footer .link {
+	color: #999;
+}
+
+@media (max-width: 768px) {
+	body, html {
+		height: 100%;
+	}
+
+	.navbar-default {
+		padding: 12px 0 10px 0;
+		background-color: rgba(255, 255, 255, 1);
+		border: none;
+	}
+
+	.navbar-default .navbar-collapse {
+		margin-top: 11px;
+	}
+
+	.navbar-default .navbar-brand {
+		font-size: 19px;
+		line-height: 1.3;
+		letter-spacing: 4px;
+	}
+
+	.navbar-default .navbar-brand img {
+		height: 30px;
+		margin-top: -6px;
+	}
+
+	.navbar-toggle .icon-bar {
+		width: 26px;
+		height: 3px;
+	}
+
+	footer .container div {
+		text-align: center;
+	}
+
+	footer .container span {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-header {
+		width: 65%;
+	}
+}
+
+#cover {
+	margin: 3%;
+	background: url(../img/index/header-bg.jpg) repeat scroll center center;
+}
+
+.card {
+	width:  550px;
+	height: 465px;
+	margin: 100px auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 70px 60px;
+}
+
+.card p {
+	font-size: 90px;
+	line-height: 13rem;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 40px;
+	color: #f35626;
+}
+
+.card a {
+	color: #2f2e2e;
+}
+
+.card i {
+	font-size: 80px;
+	line-height: 0.5;
+}
+
+.card:hover [class*=fa] {
+	-webkit-transform: scale(1.3);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.title {
+	height: 60px;
+	width: 100%;
+}
+
+.title h4 {
+	font-family: "Microsoft YaHei", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-indent: 6px;
+	color: #2f2e2e;
+}
+
+.title-border {
+	height: 3px;
+	width: 70px;
+	background-color: #f7931d;
+	margin: 20px auto 35px auto;
+}
+
+/*巨幕*/
+#services {
+	padding: 60px 0 100px 0;
+}
+
+#services .container {
+	max-width: 950px;
+}
+
+.service-item {
+	margin-top: 40px;
+	padding: 25px;
+}
+
+.service-item h4 {
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.service-item p {
+	margin: auto;;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.masonry,
+.masonry .masonry-brick {
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+	-ms-transition-duration: 0.7s;
+	-o-transition-duration: 0.7s;
+	transition-duration: 0.7s;
+
+	transition-timing-function: ease-in-out;
+}
+
+.masonry {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+	-webkit-transition-property: left, right, top, -webkit-transform, opacity;
+	-moz-transition-property: left, right, top, -moz-transform, opacity;
+	-ms-transition-property: left, right, top, -ms-transform, opacity;
+	-o-transition-property: left, right, top, -o-transform, opacity;
+	transition-property: left, right, top, transform, opacity;
+}
+
+#project-modal .project-title {
+	margin: 40px 0 10px;
+	font-size: 30px;
+}
+
+#project-modal .project-descr {
+	padding-bottom: 40px;
+}
+
+footer div {
+	width: 100%;
+}
+
+.gradient-text {
+	background: coral -webkit-linear-gradient(45deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+
+.gradient-bg {
+	background: linear-gradient(135deg, #f66, #f90, #3c9, #09f) left center/400% 400%;
+	animation: move 10s infinite;
+}
+@keyframes move {
+	0%,
+	100% {
+		background-position-x: left;
+	}
+	50% {
+		background-position-x: right;
+	}
+}
+
+.card-shadow {
+	margin: 3% 0;
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}

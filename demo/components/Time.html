@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="不鱼的小屋 - 用于记录生活的点滴">
+	<meta name="keywords" content="生活 博客 记录 不鱼 网页 动画 响应式 HTML5 CSS3 Bootstrap Javascript HTML">
+	<meta name="author" content="不鱼">
+
+	<!-- 网站icon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/index/icon2.svg">
+	<link rel="icon" type="image/png" href="../img/index/icon2.svg" sizes="16x16">
+
+	<!-- 样式 -->
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- 引入本地样式，需要放至最后，否则将被覆盖 -->
+	<link href="../css/home.css" rel="stylesheet">
+	<link href="../css/timer.css" rel="stylesheet">
+	<title>不鱼 － Record Time</title>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand gradient-text" href="/">
+					<img src="../img/index/icon.svg">
+					记录时光 - Record Time
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="./Introduction.html">实习经历</a></li>
+					<li><a href="./MissPicture.html">作品集</a></li>
+					<li><a href="#">成长时间</a></li>
+					<li><a href="./About.html">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="timer-container">
+	<div class="title">
+		<h2 class="text-center">我的大学生涯已经度过了</h2>
+		<!-- <h5 class="text-center">【 2021-01-27 3:01:00 】</h5> -->
+	</div>
+
+	<div class="timer-canvas-container">
+		<div class="flex gradient-bg" data-title="故障文本">
+			<div id="dayTimer" class="fault-text" data-text=""></div>
+		</div>
+		<canvas id="canvas" class="timer-canvas">
+			当前浏览器不支持Canvas，请更换浏览器后再试
+		</canvas>
+	</div>
+
+	<script src="../js/Time/digit.js"></script>
+	<script src="../js/Time/countdown.js"></script>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="col-sm-12 text-center">
+			&copy; 2019-2023 不鱼 版权所有
+			<!-- <a href="#" target="_blank" class="link">联系电话:1234567</a> -->
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
